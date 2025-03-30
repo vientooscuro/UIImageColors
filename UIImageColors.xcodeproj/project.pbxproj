@@ -20,9 +20,6 @@
 		87A73ECF1FD0913A00EE147D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87A73ECE1FD0913A00EE147D /* Assets.xcassets */; };
 		87A73ED21FD0913A00EE147D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87A73ED01FD0913A00EE147D /* LaunchScreen.storyboard */; };
 		87A73ED81FD092CD00EE147D /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A73ED71FD092CD00EE147D /* Album.swift */; };
-		B57E060F21F484E0001D5009 /* NSImageColors.h in Headers */ = {isa = PBXBuildFile; fileRef = B57E060D21F484E0001D5009 /* NSImageColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B57E061721F48517001D5009 /* UIImageColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 035BC84B1DABA027006CA9BE /* UIImageColors.swift */; };
-		B57E061821F4851B001D5009 /* UIImageColors.h in Headers */ = {isa = PBXBuildFile; fileRef = 035BC8491DABA020006CA9BE /* UIImageColors.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,7 +61,6 @@
 		87A73ED11FD0913A00EE147D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		87A73ED31FD0913A00EE147D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87A73ED71FD092CD00EE147D /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
-		B57E060B21F484E0001D5009 /* NSImageColors.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NSImageColors.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B57E060D21F484E0001D5009 /* NSImageColors.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSImageColors.h; sourceTree = "<group>"; };
 		B57E060E21F484E0001D5009 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -87,13 +83,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B57E060821F484E0001D5009 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -113,7 +102,6 @@
 			children = (
 				035BC83D1DAB9FED006CA9BE /* UIImageColors.framework */,
 				87A73EC51FD0913A00EE147D /* UIImageColorsExample.app */,
-				B57E060B21F484E0001D5009 /* NSImageColors.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -189,15 +177,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B57E060621F484E0001D5009 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B57E061821F4851B001D5009 /* UIImageColors.h in Headers */,
-				B57E060F21F484E0001D5009 /* NSImageColors.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -238,24 +217,6 @@
 			productReference = 87A73EC51FD0913A00EE147D /* UIImageColorsExample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		B57E060A21F484E0001D5009 /* NSImageColors */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B57E061421F484E0001D5009 /* Build configuration list for PBXNativeTarget "NSImageColors" */;
-			buildPhases = (
-				B57E060621F484E0001D5009 /* Headers */,
-				B57E060721F484E0001D5009 /* Sources */,
-				B57E060821F484E0001D5009 /* Frameworks */,
-				B57E060921F484E0001D5009 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = NSImageColors;
-			productName = NSImageColors;
-			productReference = B57E060B21F484E0001D5009 /* NSImageColors.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -276,10 +237,6 @@
 						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
-					B57E060A21F484E0001D5009 = {
-						CreatedOnToolsVersion = 10.1;
-						ProvisioningStyle = Automatic;
-					};
 				};
 			};
 			buildConfigurationList = 035BC8371DAB9FED006CA9BE /* Build configuration list for PBXProject "UIImageColors" */;
@@ -297,7 +254,6 @@
 			projectRoot = "";
 			targets = (
 				035BC83C1DAB9FED006CA9BE /* UIImageColors */,
-				B57E060A21F484E0001D5009 /* NSImageColors */,
 				87A73EC41FD0913A00EE147D /* UIImageColorsExample */,
 			);
 		};
@@ -321,13 +277,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B57E060921F484E0001D5009 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -347,14 +296,6 @@
 				87A73EC81FD0913A00EE147D /* AppDelegate.swift in Sources */,
 				8709D06E1FDC762E0007E717 /* AlbumViewCell.swift in Sources */,
 				87A73ED81FD092CD00EE147D /* Album.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		B57E060721F484E0001D5009 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				B57E061721F48517001D5009 /* UIImageColors.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -610,65 +551,6 @@
 			};
 			name = Release;
 		};
-		B57E061521F484E0001D5009 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = NSImageColors/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jathu.NSImageColors;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Debug;
-		};
-		B57E061621F484E0001D5009 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "-";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_VERSION = A;
-				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = NSImageColors/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.jathu.NSImageColors;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = macosx;
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -695,15 +577,6 @@
 			buildConfigurations = (
 				87A73ED41FD0913A00EE147D /* Debug */,
 				87A73ED51FD0913A00EE147D /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		B57E061421F484E0001D5009 /* Build configuration list for PBXNativeTarget "NSImageColors" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				B57E061521F484E0001D5009 /* Debug */,
-				B57E061621F484E0001D5009 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
